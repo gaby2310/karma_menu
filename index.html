@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
-    />
+    /> -->
     <link rel="stylesheet" href="css/style.css"
   </head>
   <body>
     <div class="top-bar">
-      <button class="btn" id="prev-page">
-        <i class="fas fa-arrow-circle-left"></i>Pagina Precedenta
-      </button>
-      <button class="btn" id="next-page">
-        <i class="fas fa-arrow-circle-right"></i>Pagina Urmatoare
-      </button>
+      <!-- <div class="btn-group btn-group-lg " role="group"> -->
+        <button type="button" class="btn btn-primary btn-lg col-5" id="prev-page"><h2 class="text-responsive">Pagina anterioara</h2></button>
+        <button type="button" class="btn btn-primary btn-lg col-5" id="next-page"><h2 class="text-responsive">Pagina urmatoare</h2></button>
+      </div>
+
       <span class="page-info">
         Pagina <span id="page-num"></span> din <span id="page-count"></span>
       </span>
     </div>
 
-    <canvas id="pdf-render"></canvas>
+    <canvas id="pdf-render" style="width: 100%"></canvas>
 
     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
     <script src="js/main.js"></script>

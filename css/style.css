@@ -3,27 +3,33 @@
   padding: 0;
 }
 
+.text-responsive {
+  font-size: 4vw;
+  text-align: center;
+}
+
 .top-bar {
   background: #333;
   color: #fff;
-  padding: 1rem;
+  padding: 0.5rem;
+  /* width: 100%; */
 }
 
-.btn {
+/* .btn {
   background: coral;
   color: #fff;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 0.7rem 2rem;
-}
+  padding: 0.7rem 1rem;
+} */
 
-.btn:hover {
+/* .btn:hover {
   opacity: 0.9;
-}
+} */
 
 .page-info {
-  margin-left: 1rem;
+  margin-left: 35%;
 }
 
 .error {

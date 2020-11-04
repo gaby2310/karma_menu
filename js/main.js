@@ -1,7 +1,7 @@
 const url = '../Meniu Karma.pdf';
 
 let pdfDoc = null,
-  pageNum = 2,
+  pageNum = 1,
   pageIsRendering = false,
   pageNumIsPending = null;
 
